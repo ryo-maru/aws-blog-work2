@@ -8,14 +8,14 @@ set :repo_url, 'https://github.com/ryo-maru/aws-blog-work2.git'
 # deployするブランチ。デフォルトでmainを使用している場合、masterをmainに変更してください。
 set :branch, ENV['BRANCH'] || 'master'
 # deploy先のディレクトリ。
-set :deploy_to, '/var/www/aws-blog-app'
+set :deploy_to, '/var/www/achieve'
 # シンボリックリンクをはるフォルダ・ファイル
 set :linked_files, %w{.env config/secrets.yml}
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets public/uploads}
 # 保持するバージョンの個数(※後述)
 set :keep_releases, 5
 # Rubyのバージョン
-set :rbenv_ruby, '2.6.5'
+set :rbenv_ruby, '2.6.0'
 set :rbenv_type, :system
 # 出力するログのレベル。エラーログを詳細に見たい場合は :debug に設定する。
 # 本番環境用のものであれば、 :info程度が普通。
